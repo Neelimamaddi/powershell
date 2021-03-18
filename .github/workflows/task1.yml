@@ -6,10 +6,10 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: .\demo.ps1
-      shell: powershell
+      shell: pwsh
